@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="box">
+      <h1>Content will load here</h1>
+    </div>
+    <button id="btn1">Load file</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("#box").load("mytextfile.txt");
+        });
+      });
+    </script>
+  </body>
+</html>

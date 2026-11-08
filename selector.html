@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>This is heading with h1</h1>
+    <h2>This is heading with h2</h2>
+    <p>This is first paragraph</p>
+    <ul>
+      <li>Belly</li>
+      <li>Chameli</li>
+      <li>Waterlily</li>
+      <li>Rose</li>
+    </ul>
+
+    <button class="btn1">Hide all</button>
+    <button class="btn2">Hide Heading 1</button>
+    <button class="btn3">Hide list Item</button>
+
+    <script>
+      $(document).ready(function () {
+        $(".btn1").click(function () {
+          $("*").hide();
+        });
+        $(".btn2").click(function () {
+          $("h1").hide();
+        });
+        $(".btn3").click(function () {
+          $("ul li:last").hide();
+        });
+      });
+    </script>
+  </body>
+</html>
